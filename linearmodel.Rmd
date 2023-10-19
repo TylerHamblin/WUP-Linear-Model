@@ -27,9 +27,11 @@ basicNN + geom_point() + ggtitle("SIMS vs. ARM")
 The scatter plot above shows a positive linear progression as the data for ARM increases from left to right, the intercept on the SIMS axis increases from top to bottom. 
 
 
+### Numerical Results 
 
-
-
+```{r}
+cor(SIMS~ARM,data=data)
+```
 
 
 
