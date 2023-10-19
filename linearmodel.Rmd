@@ -13,7 +13,7 @@ require(knitr)
 data <- read.csv(file = "https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)
 ```
 
-## Model 1 - Sims~R
+## Model 1 - Sims~ARM
 ### Scatterplot
 
 ```{r}
@@ -24,7 +24,7 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 basicNN + geom_point() + ggtitle("SIMS vs. ARM")
 ```
 
-
+The scatter plot above shows a positive linear progression as the data for ARM increases from left to right, the intercept on the SIMS axis increases from top to bottom. 
 
 
 
