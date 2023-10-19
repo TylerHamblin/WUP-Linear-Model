@@ -101,7 +101,12 @@ cor(SIMS~GRIP,data=data)
 Again the numerical data confirms the relationship of the above graph and is only lower than Model 1's numerical results by about 0.05. 
 
 
+### Inferential Results 
 
+```{r}
+model.1 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.1)
+```
 
 
 
