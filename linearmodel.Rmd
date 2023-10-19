@@ -98,17 +98,37 @@ The scatter plot suggests the grip strength that a worker would need for the job
 cor(SIMS~GRIP,data=data)
 ```
 
-Again the numerical data confirms the relationship of the above graph and is only lower than Model 1's numerical results by about 0.05. 
+Again the numerical data confirms the spread of the above graph and is only lower than Model 1's numerical results by about 0.05. This suggests that there is slightly worse positive linear relationship for SIMS defined by GRIP. 
 
 
 ### Inferential Results 
 
 ```{r}
-model.1 <- lm(SIMS~GRIP,data=data)
-summary.lm(model.1)
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
 ```
 
 
+
+
+### Predict Target Point for Model 2 
+
+```{r}
+predict(model.2, target, interval = c("prediction"))
+```
+
+
+
+### Scatterplot for Model 2 w/ Model Fit 
+
+
+```{r}
+basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
+```
+
+```{r}
+basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP") + geom_smooth(method=lm)
+```
 
 
 
