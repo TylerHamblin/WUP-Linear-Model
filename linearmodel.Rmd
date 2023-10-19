@@ -92,6 +92,13 @@ The scatter plot suggests the grip strength that a worker would need for the job
 
 
 
+### Numerical Results
+
+```{r}
+cor(SIMS~GRIP,data=data)
+```
+
+Again the numerical data confirms the relationship of the above graph and is only lower than Model 1's numerical results by about 0.05. 
 
 
 
