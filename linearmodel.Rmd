@@ -13,7 +13,7 @@ require(knitr)
 data <- read.csv(file = "https://onlinestatbook.com/case_studies_rvls/physical_strength/data.txt",sep="",header=TRUE)
 ```
 
-## Model 1 - Sims~ARM
+## Model 1 - SIMS~ARM
 ### Scatterplot
 
 ```{r}
@@ -76,6 +76,17 @@ basicNN + geom_point() + ggtitle("SIMS vs. ARM") + geom_smooth(method=lm)
 
 
 
+## Model 2 - SIMS~GRIP
+### Scatterplot
+
+
+```{r}
+basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
+```
+
+```{r}
+basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP")
+```
 
 
 
