@@ -33,5 +33,5 @@ The scatter plot above shows a positive linear progression as the data for ARM i
 cor(SIMS~ARM,data=data)
 ```
 
-
+These numerical results confirm the positive relationship between SIMS explained by ARM that the graphical data above suggested. 
 
