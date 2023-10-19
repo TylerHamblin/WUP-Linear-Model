@@ -16,7 +16,13 @@ data <- read.csv(file = "https://onlinestatbook.com/case_studies_rvls/physical_s
 ## Model 1 - Sims~R
 ### Scatterplot
 
+```{r}
+basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
+```
 
+```{r}
+basicNN + geom_point() + ggtitle("SIMS vs. ARM")
+```
 
 
 
