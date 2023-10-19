@@ -130,7 +130,7 @@ basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
 basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP") + geom_smooth(method=lm)
 ```
 
-
+When comparing the SIMS vs. ARMS and the SIMS vs. GRIP scatter plots, we can tell that the Model 1 has more points scattered towards the far ends of the target point line while Model 2 has a tighter grouping towards the middle of the graph. It may appear that Model 2 has a better fit for the target but according to the numerical data that interprets the plots, SIMS is better explained by the variable ARMS. 
 
 
 
