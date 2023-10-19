@@ -88,5 +88,30 @@ basicGRIP <- ggplot(data,aes(y=SIMS,x=GRIP))
 basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP")
 ```
 
+The scatter plot suggests the grip strength that a worker would need for the job. It shows that most of the population requires a grip strength of about 80 to 130. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
