@@ -48,6 +48,14 @@ summary.lm(model.1)
 
 
 
+### Create Target Point
+
+```{r}
+target <- data.frame(ARM=88, GRIP=94)
+```
+
+
+
 
 
 
