@@ -163,10 +163,24 @@ summary.lm(model.3)
 
 
 
+### Predict Target Point for Model 2 
+
+```{r}
+predict(model.3, target, interval = c("prediction"))
+```
+
+### Scatterplot for Model 3 w/ Model Fit 
 
 
+```{r}
+basicGRIP <- ggplot(data,aes(y=SIMS,x=ARM+GRIP))
+```
 
+```{r}
+basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP") + geom_smooth(method=lm)
+```
 
+Even visually, comparing Model 3 with the line of best fit, we can see that this graph has the tightest grouping of points closest to the blue line. There are still a few outliers, especially when approaching the 300 range, but towards the middle the points are extremely close, sometimes overlapping. With the numerical and graphical results we can confidently say that ARM+GRIP is the most influential factor defining SIMS. 
 
 
 
