@@ -183,7 +183,31 @@ basicGRIP + geom_point() + ggtitle("SIMS vs. GRIP") + geom_smooth(method=lm)
 Even visually, comparing Model 3 with the line of best fit, we can see that this graph has the tightest grouping of points closest to the blue line. There are still a few outliers, especially when approaching the 300 range, but towards the middle the points are extremely close, sometimes overlapping. With the numerical and graphical results we can confidently say that ARM+GRIP is the most influential factor defining SIMS. 
 
 
+## Comparing Models Using Anova
+### Model 1 vs Model 3
 
+```{r}
+anova(model.1,model.3)
+```
+The P-value for the comparison of Model 1 and Model 3 is 0.000004994, a very insignificant value. This gives little random chance that 3 just happens to be better 1. 
+
+### Model 2 vs Model 3
+
+```{r}
+anova(model.2,model.3)
+```
+
+
+The p-value for the comparison between Models 2 and 3 is 0.000000001495. Again a very small number leaves less room for the error of an accidental statistical relationship affecting SIMS. Model 3 can be considered the best option as it beats both 1 and 2 in it's accuracy to the line of best fit. 
+
+
+### Model 1 vs Model 2 + Conclusion
+
+```{r}
+anova(model.1,model.2)
+```
+
+Model 1 appears to be slightly better than model 2 so we know ranked from best to worst the Models go 3, 1, and 2. This concludes the statistical analysis as to what is the best option from this data set to define SIMS. After repeating the same structure of graphical, numerical, and inferential commands, only changing the inputs to the code, we are better able to side by side compare each variable. We also incorporated the use of prediction and "geom_smooth(method=lm)" commands to allow us to see how ARM, GRIP, and ARM+GRIP compare to a line that perfectly explains SIMS based on the value of the X-axis. 
 
 
 
