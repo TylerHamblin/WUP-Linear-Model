@@ -155,7 +155,11 @@ cor(SIMS~ARM+GRIP, data=data)
 This value is significantly higher than the previous two, showing that the best way to influence SIMS is by considering the ARM and GRIP variables at the same time. 
 
 
-
+### Inferential Results 
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+```
 
 
 
