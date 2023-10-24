@@ -147,6 +147,24 @@ basicARMGRIP + geom_point() + ggtitle("SIMS vs. ARM+GRIP")
 Again for the last explanation of SIMS now defined by the variables ARM AND GRIP, we see a positive linear progression to the right. The majority of data falls between the 150 - 250 X-value range. 
 
 
+### Numerical Results 
+```{r}
+cor(SIMS~ARM+GRIP, data=data)
+```
+
+This value is significantly higher than the previous two, showing that the best way to influence SIMS is by considering the ARM and GRIP variables at the same time. 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
