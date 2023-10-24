@@ -137,17 +137,14 @@ When comparing the SIMS vs. ARMS and the SIMS vs. GRIP scatter plots, we can tel
 ### Scatterplot
 
 ```{r}
-basicARMGRIP <- ggplot(data,aes(y=SIMS,x=ARM))
+basicARMGRIP <- ggplot(data,aes(y=SIMS,x=ARM+GRIP))
 ```
 
 ```{r}
 basicARMGRIP + geom_point() + ggtitle("SIMS vs. ARM+GRIP")
 ```
 
-
-
-
-
+Again for the last explanation of SIMS now defined by the variables ARM AND GRIP, we see a positive linear progression to the right. The majority of data falls between the 150 - 250 X-value range. 
 
 
 
