@@ -144,8 +144,6 @@ basicARMGRIP <- ggplot(data,aes(y=SIMS,x=ARM))
 basicARMGRIP + geom_point() + ggtitle("SIMS vs. ARM+GRIP")
 ```
 
-REMEMBER TO COMMIT STUFF FOR MODEL 3
-CONTINUE NEXT TUESDAY
 
 
 
